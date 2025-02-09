@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minecraft on Blog des Martin Paul</title>
+    <link>https://martin-paul.fr/minecraft/</link>
+    <description>Recent content in Minecraft on Blog des Martin Paul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 13 Aug 2023 14:46:47 +0200</lastBuildDate><atom:link href="https://martin-paul.fr/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Présentation du jeu</title>
+      <link>https://martin-paul.fr/minecraft/premier-article/</link>
+      <pubDate>Sun, 13 Aug 2023 14:46:47 +0200</pubDate>
+      
+      <guid>https://martin-paul.fr/minecraft/premier-article/</guid>
+      <description>Le blog de Minecraft Voici le wiki minecraft.
+En premier nous allons parler de Minecraft et de ses versions.
+Les différentes versions Dans Minecraft, il y a plusieurs versions différentes, mais les plus connues sont la version BEDROCK et la version JAVA.
+Il y a beaucoup de catégorie de versions.
+Par exemple, il y a la 1.14, 1.15, 1.1.16 &amp;hellip;. Les versions Bedrock bêta, les versions portable/ version portable Alpha&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
