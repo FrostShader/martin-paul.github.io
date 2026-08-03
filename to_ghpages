@@ -2,8 +2,8 @@
 
 #Usage: ./to_ghpages
 
-hugo
-cp CNAME public
+npm i && npm run build
+cp CNAME dist
 
 BRANCH=$(git symbolic-ref -q HEAD)
 BRANCH=${BRANCH##refs/heads/}
@@ -15,8 +15,8 @@ git commit -am "Save uncommited changes (WIP)"
 echo "Building GitHub Page branch..."
 git branch --delete --force gh-pages
 git checkout --orphan gh-pages
-git add -f public
+git add -f dist
 git commit -m "Rebuild GitHub pages"
 
 echo "Pushing GitHub Page branch..."
-git filter-branch -f --prune-empty --subdirectory-filter public && git push -f origin gh-pages && git checkout -f $BRANCH
+git filter-branch -f --prune-empty --subdirectory-filter dist && git push -f origin gh-pages && git checkout -f $BRANCH

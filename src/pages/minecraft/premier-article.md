@@ -1,5 +1,6 @@
 ---
-title : "Présentation du jeu"
+layout: ../../layouts/Layout.astro
+title: "Présentation du jeu - Blog des Martin Paul"
 date: 2021-08-13T14:46:47+02:00
 author: "David"
 draft: false
@@ -58,5 +59,4 @@ Les cisailles découpent la laine, tous les type de feuillage et les toiles d'ar
 
 ### Survie 
 Dans le mode Survie, le joueur doit survivre en collectant différentes ressources, en combattant des créatures hostiles...
-
 

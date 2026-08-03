@@ -1,0 +1,35 @@
+---
+interface Props {
+  title?: string;
+  showHomeLink?: boolean;
+}
+
+const { title = 'Blog des Martin Paul', showHomeLink = true } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/style.css" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/" class="noLinkDecoration">Blog des Martin Paul</a></h1>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    {showHomeLink && (
+      <footer>
+        <a href="/">Retour à la page d'accueil</a>
+      </footer>
+    )}
+  </body>
+</html>

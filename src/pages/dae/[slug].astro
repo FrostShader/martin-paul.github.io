@@ -1,0 +1,24 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const chapters = await getCollection('dae');
+  return chapters.map((chapter) => ({
+    params: { slug: chapter.id.replace(/\.md$/, '') },
+    props: { chapter },
+  }));
+}
+
+interface Props {
+  chapter: CollectionEntry<'dae'>;
+}
+
+const { chapter } = Astro.props as Props;
+const { Content } = await render(chapter);
+---
+
+<Layout title={`${chapter.data.title} - Blog des Martin Paul`}>
+  <h2>{chapter.data.title} par {chapter.data.author}</h2>
+  <Content />
+</Layout>

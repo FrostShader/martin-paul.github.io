@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const chapters = (await getCollection('dae')).sort((a, b) => a.data.weight - b.data.weight);
+
+const chapterPath = (id: string) => id.replace(/\.md$/, '');
+---
+
+<Layout title="Dragon et Empire par David - Blog des Martin Paul">
+  <h2>Dragon et Empire par David</h2>
+
+  <p>Plongez dans l'univers de Dragon et Empire en choisissant un chapitre :</p>
+
+  <ul>
+    {chapters.map((chapter) => (
+      <li><a href={`/dae/${chapterPath(chapter.id)}/`}>{chapter.data.title}</a></li>
+    ))}
+  </ul>
+</Layout>
