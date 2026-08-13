@@ -17,7 +17,8 @@ Installer vscode pour pouvoir éditer le site.
 - taper `npm run dev` et ouvrez un navigateur à l’adresse http://localhost:4321/ pour tester le site
 - taper `npm run build`  pour générer le site
 - si ok, commiter et pousser les fichiers via git
-- ensuite, publier le blog en tappant `./to_ghpages` dans le terminal (il est possible qu'il faille se connecter sur github)
+- les modifications de la branche `main` devrait déclencher une publication automatique via GitHub Actions
+- en cas de problème, on peut toujours publier manuellement en tappant `./to_ghpages` dans le terminal
 
 ## Liens
 
